@@ -1,0 +1,44 @@
+<!--Home page Html-->
+<div class="container-fluid mainContainer">
+  <div class="row mainRow">
+    <div class="col mainCol">
+
+      <!--Content Section-->
+      <div class="row americanCountryRowHeading">
+        <div class="backArrow">
+          <a [routerLink]="['/home']">
+            <i class="material-icons">
+              keyboard_backspace
+            </i>
+          </a>
+        </div>
+        <div class="col-md-12 upperCol">AMERICA</div>
+      </div>
+
+      <div class="row americanCountryRowContent" *ngIf="allAmericanCountries.length>0">
+        <div *ngFor="let americanCountry of allAmericanCountries" class="col-xs-12 col-md-6 col-lg-6 col-xl-6 americanCountriesMainCol">
+
+          <!--Country Iteration div starts here-->
+          <div class="row americanCountriesRow">
+            <a [routerLink]="['/country',americanCountry.name]">
+              <div class="col-md-12 americanCountryCol">
+                <div class="panel-flag americanCountriesFlag">
+                  <img [src]="americanCountry.flag">
+                </div>
+                <div class="panel panel-default americanCountriesPanel">
+                  <div class="panel-heading americanCountriesPanelHeading">Country: {{americanCountry.name}}</div>
+                  <div class="panel-body americanCountriesPanelBody">
+                    <p>
+                      Capital : {{ americanCountry.capital}}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!--Countries Iteration div ends here-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

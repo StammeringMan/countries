@@ -1,0 +1,185 @@
+<div class="container-fluid mainContainer">
+  <div class="row mainRow">
+    <div class="col-12 mainCol">
+      <div class="row contentRow">
+        <div class="backArrow">
+          <button (click)="backClicked()">
+            <i class="material-icons">
+              keyboard_backspace
+            </i>
+          </button>
+        </div>
+
+        <div *ngFor="let country of currentCountry" [ngStyle]="{'background-image':'url(' + country.flag + ')'}"
+          class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 countriesMainCol">
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 countriesMainContentCol">
+          <div class="row countryDetailsRow" *ngFor="let country of currentCountry">
+            <div class="countryDetailsCol col-10 col-md-12 col-lg-12 col-xs-12">
+              <div class="row countryNameRow">
+                <div class="col col-12 col-md-12 col-lg-12 col-xl-12 countryNameCol">
+                  <h3>
+                    Country: {{ country.name }}
+                  </h3>
+                </div>
+              </div>
+              <div class="row countryContentRow">
+                <div class="col col-12 col-md-12 col-lg-12 col-xl-12 countryContentCol">
+                  <div class="row countryContentColInnerRow">
+                    <div class="col-12 col-md-12 col-lg-4 col-xs-4 countryContentLeftCol">
+                      <p>
+                        Capital: {{ country.capital }}
+                      </p>
+
+                      <p *ngIf=" country.topLevelDomain.length>0"> Top Level Domain:
+                        <span *ngFor="let topLevelDomain of  country.topLevelDomain;let first=first;let last=last">{{ topLevelDomain
+                          }}{{ last ? '' : ', ' }}</span>
+                      </p>
+
+                      <p>
+                        Alpha2Code: {{ country.alpha2Code }}
+                      </p>
+
+                      <p>
+                        Alpha3Code: {{ country.alpha3Code }}
+                      </p>
+
+                      <p *ngIf=" country.callingCodes.length>0">
+                        Top Level Domain:
+                        <span *ngFor="let callingCodes of  country.callingCodes;let first=first;let last=last">{{ callingCodes
+                          }}{{ last ? '' : ', ' }}</span>
+                      </p>
+
+                      <p *ngIf=" country.altSpellings.length>0">
+                        AltSpellings:
+                        <span *ngFor="let altSpelling of  country.altSpellings;let first=first;let last=last">{{ altSpelling
+                          }}{{ last ? '' : ', ' }}</span>
+                      </p>
+
+                      <p>
+                        Region: {{ country.region }}
+                      </p>
+
+                      <p>
+                        Subregion: {{ country.subregion }}
+                      </p>
+
+                      <p>
+                        Population: {{ country.population }}
+                      </p>
+
+
+                      <p *ngIf=" country.latlng.length>0">
+                        Lat/Lng:
+                        <span *ngFor="let latlng of  country.latlng;let first=first;let last=last">{{ latlng }}{{ last ?
+                          '' : ', ' }}
+                        </span>
+                      </p>
+
+                      <p>
+                        Demonym: {{ country.demonym }}
+                      </p>
+                      <p>
+                        Area: {{ country.area }}
+                      </p>
+
+                      <p>
+                        Gini: {{ country.gini }}
+                      </p>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 col-xs-4 countryMiddleContentCol">
+
+                      <p *ngIf=" country.timezones.length>0">
+                        Timezones:
+                        <span *ngFor="let timezone of  country.timezones;let first=first;let last=last">{{ timezone }}{{
+                          last ? '' : ', ' }}</span>
+                      </p>
+
+                      <p *ngIf=" country.borders.length>0">
+                        Border:
+                        <span *ngFor="let border of  country.borders;let first=first;let last=last">{{ border }}{{ last ?
+                          '' : ', ' }}
+                        </span>
+                      </p>
+
+                      <p>
+                        Native Name: {{ country.nativeName }}
+                      </p>
+
+                      <p>
+                        Numeric Code: {{ country.numericCode }}
+                      </p>
+
+                      <div *ngIf=" country.currencies.length>0">
+                        Currencies:
+                        <div *ngFor="let currency of  country.currencies">
+                          <p>
+                            Code: {{ currency.code }}
+                          </p>
+                          <p>
+                            Name: {{ currency.name }}
+                          </p>
+                          <p>
+                            Symbol: {{ currency.symbol }}
+                          </p>
+                        </div>
+                      </div>
+                      <div *ngIf=" country.languages.length>0">
+                        Languages:
+                        <div *ngFor="let language of  country.languages">
+                          <p>
+                            iso639_1: {{ language.iso639_1 }}
+                          </p>
+                          <p>
+                            iso639_2: {{ language.iso639_2 }}
+                          </p>
+                          <p>
+                            Name: {{ language.name }}
+                          </p>
+                          <p>
+                            Native Name: {{ language.nativeName }}
+                          </p>
+                        </div>
+                      </div>
+
+                      <div *ngIf=" country.translations.length>0">
+                        Translations:
+                        <div *ngFor="let translation of country.translations">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 col-xs-4 countryContentRightCol">
+                      <div *ngIf=" country.regionalBlocs.length>0">
+                        Regional Blocs:
+                        <div *ngFor="let regionalBloc of  country.regionalBlocs; let first=first;let last=last">
+                          <p>
+                            Acronym: {{ regionalBloc.acronym }}
+                          </p>
+                          <p>
+                            Name: {{ regionalBloc.name }}
+                          </p>
+                          <p>
+                            Other Acronyms: {{ regionalBloc.otherAcronyms }}
+                            <span *ngFor="let otherAcronym of  regionalBloc.otherAcronyms;let first=first;let last=last">{{
+                              otherAcronym }}{{ last ? '' : ', ' }}</span>
+
+                          </p>
+                          <p>
+                            Other Names: {{ regionalBloc.otherNames }}
+                            <span *ngFor="let otherName of  regionalBloc.otherNames;let first=first;let last=last">{{ otherName
+                              }}{{ last ? '' : ', ' }}</span>
+                          </p>
+                        </div>
+                        <p>
+                          Cioc: {{ country.cioc }}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

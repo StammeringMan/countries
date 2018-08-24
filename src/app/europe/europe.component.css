@@ -1,0 +1,191 @@
+.mainContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.mainRow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainCol{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+}
+
+.europeanCountryRow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.europeanCountryRowHeading{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url("../../assets/images/europeanHero.png");;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upperCol{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    color: white;
+    text-shadow: #f2f2f2;
+}
+
+.europeanCountryRowContent{
+    width: 60%;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: white; 
+    box-shadow: 0 0 3rem rgba(0,0,255,.1);
+    cursor: pointer;
+    transform: background-color 0.9s ease;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
+.europeanCountryRowContent :hover{
+    background-color: #f8f8f8; 
+}
+
+.europeanCountriesMainCol{
+    height: 200px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid #f8f8f8;
+  
+}
+
+.europeanCountriesRow{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.europeanCountryCol{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.europeanCountriesFlag {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.europeanCountriesFlag img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.europeanCountriesPanel{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+
+.backArrow{
+    position: absolute;
+    top: 50px;
+    left: 28px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.backArrow :hover{
+    cursor: pointer;
+}
+
+.backArrow i {
+    font-size: 32px;
+}
+
+.backArrow a{
+    color: inherit;
+    border: none;
+    outline: none;
+}
+
+/*------------------------------_Media Queries-----------------*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+  
+    .europeanCountryRowHeading{
+        height: 640px;
+    }
+
+    .upperCol{
+        font-size: 3rem;
+    }
+
+    .backArrow{
+        top: 20px;
+    }
+    
+}
