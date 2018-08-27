@@ -80,7 +80,7 @@
 }
 
 
-.allSameLanguagesCountriesHeading{
+.allSameCurrenciesCountriesHeading{
     width: 100%;
     height: 100px;
     margin: 0;
@@ -116,11 +116,11 @@
     font-size: 1.2rem;
 }
 
-.allSameLanguagesCountriesMainCol{
+.allSameCurrenciesCountriesMainCol{
     padding: 20px;
 }
 
-.allSameLanguagesCountriesRow{
+.allSameCurrenciesCountriesRow{
     width: 80%;
     margin: 0;
     display: flex;
@@ -131,14 +131,14 @@
     box-shadow: 0 0 3rem rgba(0,0,255,.1);
 }
 
-.sameLanguagesCountryCol{
+.sameCurrenciesCountryCol{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.sameLanguagesCountryFlag{
+.sameCurrenciesCountryFlag{
     width: 100%;
     height: 80%;
     display: flex;
@@ -146,12 +146,12 @@
     align-items: center;
 }
 
-.sameLanguagesCountryFlag img{
+.sameCurrenciesCountryFlag img{
     width: 100%;
     height: 100%;
 }
 
-.sameLanguagesCountryPanel{
+.sameCurrenciesCountryPanel{
     width: 100%;
     height: 20%;
     display: flex;

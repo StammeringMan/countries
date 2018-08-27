@@ -4,7 +4,7 @@
     <div class="col mainCol">
 
       <!--Content Section-->
-      <div class="row allSameLanguagesCountriesHeading">
+      <div class="row allSameCurrenciesCountriesHeading">
         <div class="backArrow">
           <a [routerLink]="['/home']">
             <i class="material-icons">
@@ -18,25 +18,25 @@
       <div class="row allSameCountriesDescriptionRow">
         <div class="col allSameCountriesDescriptionCol">
           <p>
-            Language Filter Applied
+            Currency Filter Applied
           </p>  
         </div>
       </div>
 
-      <div class="row allSameLanguagesCountriesRow">
-        <div *ngFor="let sameLanguagesCountry of allSameLanguagesCountries" class="col-xs-12 col-md-6 col-lg-4 col-xl-4 allSameLanguagesCountriesMainCol">
+      <div class="row allSameCurrenciesCountriesRow">
+        <div *ngFor="let sameCurrenciesCountry of allSameCurrenciesCountries" class="col-xs-12 col-md-6 col-lg-4 col-xl-4 allSameCurrenciesCountriesMainCol">
 
           <!--Country Iteration div starts here-->
-          <div class="row sameLanguagesCountryRow">
-            <div class="col-md-12 sameLanguagesCountryCol">
-              <div class="panel-flag sameLanguagesCountryFlag">
-                <img [src]="sameLanguagesCountry.flag">
+          <div class="row sameCurrenciesCountryRow">
+            <div class="col-md-12 sameCurrenciesCountryCol">
+              <div class="panel-flag sameCurrenciesCountryFlag">
+                <img [src]="sameCurrenciesCountry.flag">
               </div>
-              <div class="panel panel-default sameLanguagesCountryPanel">
-                <div class="panel-heading sameLanguagesCountryPanelHeading">Country: {{sameLanguagesCountry.name}}</div>
-                <div class="panel-body sameLanguagesCountryPanelBody">
+              <div class="panel panel-default sameCurrenciesCountryPanel">
+                <div class="panel-heading sameCurrenciesCountryPanelHeading">Country: {{sameCurrenciesCountry.name}}</div>
+                <div class="panel-body sameCurrenciesCountryPanelBody">
                   <p>
-                    Capital : {{ sameLanguagesCountry.capital}}
+                    Capital : {{ sameCurrenciesCountry.capital}}
                   </p>
                 </div>
               </div>

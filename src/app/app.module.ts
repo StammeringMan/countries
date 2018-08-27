@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 
-
-
 // Router Module for Application level Route
 import { RouterModule, Routes } from '@angular/router';
 
@@ -17,6 +15,7 @@ import { EuropeComponent } from './europe/europe.component';
 import { OceaniaComponent } from './oceania/oceania.component'
 import { CountryViewComponent } from './shared/country-view/country-view.component';
 import { LanguageComponent } from './language/language.component';
+import { CurrencyComponent } from './currency/currency.component';
 
 
 // import statement for services
@@ -38,6 +37,9 @@ import { OceaniaHttpService } from './oceania-http.service';
 import { CountryLanguageService } from './country-language.service';
 import { CountryLanguageHttpService } from './country-language-http.service';
 
+import { CurrencyService } from './currency.service';
+import { CurrencyHttpService } from './currency-http.service';
+
 
 
 @NgModule({
@@ -50,7 +52,8 @@ import { CountryLanguageHttpService } from './country-language-http.service';
     EuropeComponent,
     OceaniaComponent,
     CountryViewComponent,
-    LanguageComponent
+    LanguageComponent,
+    CurrencyComponent
   ],
   imports: [
     BrowserModule,
@@ -63,13 +66,14 @@ import { CountryLanguageHttpService } from './country-language-http.service';
       { path: 'europe', component: EuropeComponent },
       { path: 'oceania', component: OceaniaComponent },
       { path: 'country/:name', component: CountryViewComponent },
-      { path: 'language/:code' , component: LanguageComponent }
+      { path: 'language/:code' , component: LanguageComponent },
+      { path: 'currency/:code', component: CurrencyComponent }
     ]),
     HttpClientModule
   ],
   providers: [AfricaService, AfricaHttpService, AmericaService, AmericaHttpService,
     AsiaService, AsiaHttpService, EuropeService, EuropeHttpService,
-    OceaniaService, OceaniaHttpService, CountryLanguageService, CountryLanguageHttpService],
+    OceaniaService, OceaniaHttpService, CountryLanguageService, CountryLanguageHttpService, CurrencyHttpService, CurrencyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

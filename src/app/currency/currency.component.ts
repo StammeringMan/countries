@@ -5,9 +5,9 @@ import { Location } from '@angular/common';
 // Router Module for Application level Route
 import { Router, ActivatedRoute } from '@angular/router';
 
-//importing services
-import { CountryLanguageService } from '../country-language.service';
-import { CountryLanguageHttpService } from '../country-language-http.service';
+//importing Services
+import { CurrencyService } from '../currency.service';
+import { CurrencyHttpService } from '../currency-http.service';
 
 
 //importing observables related code
@@ -19,18 +19,18 @@ import { switchMap } from 'rxjs/operators';
 
 
 @Component({
-  selector: 'app-language',
-  templateUrl: './language.component.html',
-  styleUrls: ['./language.component.css']
+  selector: 'app-currency',
+  templateUrl: './currency.component.html',
+  styleUrls: ['./currency.component.css']
 })
-export class LanguageComponent implements OnInit, OnDestroy {
+export class CurrencyComponent implements OnInit, OnDestroy {
 
-  public allSameLanguagesCountries;
+  public allSameCurrenciesCountries;
   public selectedCode;
 
-  constructor(private countryLanguageHttpService: CountryLanguageHttpService, private _route: ActivatedRoute, private location: Location) {
+  constructor(private currencyHttpService: CurrencyHttpService, private _route: ActivatedRoute, private location: Location) {
 
-    console.log("Languages Component Called");
+    console.log("Currencies Component Called");
   }
 
   backClicked() {
@@ -46,12 +46,12 @@ export class LanguageComponent implements OnInit, OnDestroy {
     console.log(this.selectedCode);
     this._route.params
       .pipe(switchMap(params => {
-        return this.countryLanguageHttpService.getAllSameLanguagesCountries(this.selectedCode)
+        return this.currencyHttpService.getAllSameCurrencyCountries(this.selectedCode)
       }))
       .subscribe(
         data => {
           console.log(data);
-          this.allSameLanguagesCountries = data;
+          this.allSameCurrenciesCountries = data;
 
         },
         error => {
@@ -62,6 +62,6 @@ export class LanguageComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    console.log("Language Component Destroyed");
+    console.log("Currency Component Destroyed");
   }
 } 

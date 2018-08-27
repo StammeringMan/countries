@@ -19,14 +19,14 @@ import { switchMap } from 'rxjs/operators';
 })
 
 
-export class CountryLanguageHttpService {
+export class CurrencyHttpService {
 
-  public currentLanguageCode;
+  public currentCurrencyCode;
   
-  public baseUrl = 'https://restcountries.eu/rest/v2/lang/';
+  public baseUrl = 'https://restcountries.eu/rest/v2/currency/';
   
   constructor(private _http: HttpClient) { 
-    console.log("Country Language View Service Called");
+    console.log("Currency View Service Called");
 
   }
 
@@ -39,9 +39,9 @@ export class CountryLanguageHttpService {
 
 
   // method to return single country Informations
-  public getAllSameLanguagesCountries(currentLanguageCode): any {
+  public getAllSameCurrencyCountries(currentCurrencyCode): any {
 
-    let myResponse = this._http.get(this.baseUrl + currentLanguageCode);
+    let myResponse = this._http.get(this.baseUrl + currentCurrencyCode);
     console.log(myResponse);
     return myResponse;
   } // end get country info function
