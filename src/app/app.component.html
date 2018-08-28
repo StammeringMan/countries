@@ -4,21 +4,21 @@
   <div class="row navigationMainRow">
     <div class="col-xs-12 col-md-12 col-lg-12 col-xl-12 navigationMainCol">
       <div class="row navigationLogoRow">
-        <div class="col-xs-6 col-md-6 col-lg-8 col-xl-8  navigationLogoCol">
+        <div class="col-6 col-md-6 col-lg-8 col-xl-8  navigationLogoCol">
           <a [routerLink]="['/home']">
             <img src="../assets/images/Terra.png" alt="Logo" id="logo">
           </a>
         </div>
 
-        <div class="col-xs-6 col-md-6 col-lg-4 col-xl-4 navigationMenuCol">
+        <div class="col-6 col-md-6 col-lg-4 col-xl-4 navigationMenuCol">
           <div class="row navigationMenuRow">
-            <div class="col-6 navigationLanguageCol">
-              <select ng-model="languages" (change)="languageSelected($event)" id="dropdownBtn">
+            <div class="col-6 col-md-6 col-lg-6 col-xl-6 navigationLanguageCol">
+              <select ng-model="languages" (change)="languageSelected($event)"  id="dropdownBtn">
                 <option value="">Languages</option>
                 <option *ngFor="let language of Languages"> {{ language.code}}</option>
               </select>
             </div>
-            <div class="col-6 navigationCurrencyCol">
+            <div class="col-6 col-md-6 col-lg-6 col-xl-6 navigationCurrencyCol">
               <select ng-model="currencies" (change)="currencySelected($event)" id="dropdownBtn">
                 <option value="">Currencies</option>
                 <option *ngFor="let currency of Currencies"> {{ currency.AlphabeticCode}}</option>

@@ -4,10 +4,19 @@
 
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
 }
 
@@ -34,9 +43,17 @@ a:hover{
     width: 100%;
     height: 90%;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .navigationContentCol{
@@ -51,21 +68,57 @@ a:hover{
     margin: 20px;
     padding: 15px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .firstRowFirstCol{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 /*------------------------------------------------Africa-------------------------------------*/
 .africaCard{
     max-width: 400px;
     height: 640px;
+
+
+    background-image:  -webkit-gradient(
+        linear, 
+        left top, left bottom, 
+        from(rgba(255, 0, 0, 0)), 
+        to(rgba(255, 0, 0, 0.45))
+      ),
+      url("../../assets/images/Africa.jpg");
+
+
+    background-image:  -webkit-linear-gradient(
+        rgba(255, 0, 0, 0), 
+        rgba(255, 0, 0, 0.45)
+      ),
+      url("../../assets/images/Africa.jpg");
+
+
+    background-image:  -o-linear-gradient(
+        rgba(255, 0, 0, 0), 
+        rgba(255, 0, 0, 0.45)
+      ),
+      url("../../assets/images/Africa.jpg");
 
 
     background-image:  linear-gradient(
@@ -76,7 +129,9 @@ a:hover{
     background-size: cover;
     background-repeat: no-repeat;
 
-    box-shadow: 0 0 3rem rgba(0,0,255,.1);
+    -webkit-box-shadow: 0 0 3rem rgba(0,0,255,.1);
+
+            box-shadow: 0 0 3rem rgba(0,0,255,.1);
     border-radius: 1.5rem;
 }
 
@@ -88,9 +143,15 @@ a:hover{
 #africaHeading{
     padding-top: calc(100% - 5%);
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 35px;
     font-size: 3rem;
     color: white;
@@ -100,9 +161,15 @@ a:hover{
 
 #africaContent{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 35px;
     font-size: 1.2rem;
     color: white;
@@ -121,7 +188,9 @@ a:hover{
     background-size: cover;
     background-repeat: no-repeat;
 
-    box-shadow: 0 0 3rem rgba(0,0,255,.1);
+    -webkit-box-shadow: 0 0 3rem rgba(0,0,255,.1);
+
+            box-shadow: 0 0 3rem rgba(0,0,255,.1);
     border-radius: 1.5rem;
 }
 
@@ -133,9 +202,15 @@ a:hover{
 #americaHeading{
     padding-top: calc(100% - 5%);
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 35px;
     font-size: 3rem;
     color: white;
@@ -145,9 +220,15 @@ a:hover{
 
 #americaContent{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 35px;
     font-size: 1rem;
     color: white;
@@ -167,7 +248,9 @@ a:hover{
     background-size: cover;
     background-repeat: no-repeat;
 
-    box-shadow: 0 0 3rem rgba(0,0,255,.1);
+    -webkit-box-shadow: 0 0 3rem rgba(0,0,255,.1);
+
+            box-shadow: 0 0 3rem rgba(0,0,255,.1);
     border-radius: 1.5rem;
 }
 
@@ -179,9 +262,15 @@ a:hover{
 #asiaHeading{
     padding-top: calc(100% - 5%);
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 35px;
     font-size: 3rem;
     color: white;
@@ -191,9 +280,15 @@ a:hover{
 
 #asiaContent{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 35px;
     font-size: 1rem;
     color: white;
@@ -213,15 +308,29 @@ a:hover{
     margin: 0;
     padding: 0;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .secondRowFirstCol{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 
@@ -229,6 +338,29 @@ a:hover{
 .europeCard{
     max-width: 400px;
     height: 640px;
+
+
+    background-image: -webkit-gradient(
+        linear, 
+        left top, left bottom, 
+        from(rgba(255, 255, 255, 0)), 
+        to(rgb(0, 0, 0))
+    ),
+     url("../../assets/images/Europe.jpg");
+
+
+    background-image: -webkit-linear-gradient(
+        rgba(255, 255, 255, 0), 
+        rgb(0, 0, 0)
+    ),
+     url("../../assets/images/Europe.jpg");
+
+
+    background-image: -o-linear-gradient(
+        rgba(255, 255, 255, 0), 
+        rgb(0, 0, 0)
+    ),
+     url("../../assets/images/Europe.jpg");
 
 
     background-image: linear-gradient(
@@ -239,7 +371,9 @@ a:hover{
     background-size: cover;
     background-repeat: no-repeat;
 
-    box-shadow: 0 0 3rem rgba(0,0,255,.1);
+    -webkit-box-shadow: 0 0 3rem rgba(0,0,255,.1);
+
+            box-shadow: 0 0 3rem rgba(0,0,255,.1);
     border-radius: 1.5rem;
 }
 
@@ -251,9 +385,15 @@ a:hover{
 #europeHeading{
     padding-top: calc(100% - 5%);
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 30px;
     font-size: 3rem;
     color: white;
@@ -263,9 +403,15 @@ a:hover{
 
 #europeContent{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 30px;
     font-size: 0.9rem;
     color: white;
@@ -282,6 +428,29 @@ a:hover{
     height: 640px;
 
 
+    background-image:  -webkit-gradient(
+        linear, 
+        left top, left bottom, 
+        from(rgba(255, 255, 255, 0)), 
+        to(rgb(0, 0, 0))
+    ),
+    url("../../assets/images/Oceania.jpg");
+
+
+    background-image:  -webkit-linear-gradient(
+        rgba(255, 255, 255, 0), 
+        rgb(0, 0, 0)
+    ),
+    url("../../assets/images/Oceania.jpg");
+
+
+    background-image:  -o-linear-gradient(
+        rgba(255, 255, 255, 0), 
+        rgb(0, 0, 0)
+    ),
+    url("../../assets/images/Oceania.jpg");
+
+
     background-image:  linear-gradient(
         rgba(255, 255, 255, 0), 
         rgb(0, 0, 0)
@@ -290,7 +459,9 @@ a:hover{
     background-size: cover;
     background-repeat: no-repeat;
 
-    box-shadow: 0 0 3rem rgba(0,0,255,.1);
+    -webkit-box-shadow: 0 0 3rem rgba(0,0,255,.1);
+
+            box-shadow: 0 0 3rem rgba(0,0,255,.1);
     border-radius: 1.5rem;
 }
 
@@ -302,9 +473,15 @@ a:hover{
 #oceaniaHeading{
     padding-top: calc(100% - 5%);
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 20px;
     font-size: 3rem;
     color: white;
@@ -314,9 +491,15 @@ a:hover{
 
 #oceaniaContent{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 20px;
     font-size: 0.9rem;
     color: white;
@@ -332,18 +515,40 @@ a:hover{
     margin-top: 20px;
     padding-top: 10px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .footerCol{
     width: 100%;
     height: 50px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#0ba360), to(#3cba92));
+
+    background-image: -webkit-linear-gradient(bottom, #0ba360 0%, #3cba92 100%);
+
+    background-image: -o-linear-gradient(bottom, #0ba360 0%, #3cba92 100%);
 
     background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
 }    
@@ -357,8 +562,121 @@ a:hover{
 
 /*---------------------------------------------Media Query For Mobile------------------------------------- */
 
-@media (max-width: 480px) {
+@media (min-width: 240px) and (max-width: 1280px) {
   
     
+    .firstRow{
+        height: 640px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .firstRowFirstCol{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .firstRowFirstCol a {
+        height: 30%;
+        margin: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+    }
+
+    .firstRowFirstCol .africaCard, .americaCard, .asiaCard{
+        height: 100%;
+    }
+
+    #africaHeading, #americaHeading, #asiaHeading{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding-top: 0;
+        padding-left: 0;
+        font-size: 2rem; 
+    }
     
-  }
+    #africaContent, #americaContent, #asiaContent {
+        padding-left: 0;
+        font-size: 0.8rem;
+        padding: 20px;
+    }
+
+    #americaContent, #asiaContent{
+        padding: 10px;
+    }
+
+    /*-------------------------------------Second Row---------------------------------*/
+
+    .secondRow{
+        height: 640px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .secondRowFirstCol{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .secondRowFirstCol a {
+        height: 30%;
+        margin: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+    }
+
+    .secondRowFirstCol .europeCard, .oceaniaCard{
+        height: 100%;
+    }
+
+    #europeHeading, #oceaniaHeading{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding-top: 0;
+        padding-left: 0;
+        font-size: 2rem; 
+    }
+    
+    #europeContent, #oceaniaContent{
+        padding-left: 0;
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+}   

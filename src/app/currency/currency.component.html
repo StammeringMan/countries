@@ -19,7 +19,7 @@
         <div class="col allSameCountriesDescriptionCol">
           <p>
             Currency Filter Applied
-          </p>  
+          </p>
         </div>
       </div>
 
@@ -33,7 +33,11 @@
                 <img [src]="sameCurrenciesCountry.flag">
               </div>
               <div class="panel panel-default sameCurrenciesCountryPanel">
-                <div class="panel-heading sameCurrenciesCountryPanelHeading">Country: {{sameCurrenciesCountry.name}}</div>
+                <div class="panel-heading sameCurrenciesCountryPanelHeading">
+                  <p>
+                    Country: {{sameCurrenciesCountry.name}}
+                  </p>
+                </div>
                 <div class="panel-body sameCurrenciesCountryPanelBody">
                   <p>
                     Capital : {{ sameCurrenciesCountry.capital}}

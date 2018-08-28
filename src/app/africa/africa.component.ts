@@ -5,6 +5,8 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { AfricaService } from '../africa.service';
 import { AfricaHttpService } from '../africa-http.service';
 
+import { africa } from './africa';
+
 @Component({
   selector: 'app-africa',
   templateUrl: './africa.component.html',

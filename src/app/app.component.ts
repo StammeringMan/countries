@@ -17,6 +17,8 @@ export class AppComponent {
   public Currencies;
   public selectedCurrency;
 
+  public selectModel;
+
 
   constructor(private router: Router, route: ActivatedRoute) {
     this.Languages = [
@@ -1426,5 +1428,4 @@ export class AppComponent {
     this.selectedCurrency = event.target.value;
     this.router.navigate(['/currency', event.target.value]);
   }
-
 }
